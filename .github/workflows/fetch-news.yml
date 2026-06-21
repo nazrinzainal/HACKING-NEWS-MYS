@@ -1,0 +1,36 @@
+name: Auto-fetch berita siber
+
+on:
+  schedule:
+    - cron: '7 0 * * *'   # 8:07 AM Asia/Kuala_Lumpur (UTC+8) daily
+  workflow_dispatch: {}     # allow manual trigger from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch latest cyber security news
+        run: node fetch-news.js
+
+      - name: Commit and push if data changed
+        run: |
+          git config user.name "siberwatch-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if ! git diff --quiet -- data/articles.json; then
+            git add data/articles.json
+            git commit -m "chore: auto-update berita siber [skip ci]"
+            git push
+          else
+            echo "No new articles, skipping commit."
+          fi

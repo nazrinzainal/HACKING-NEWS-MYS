@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>SiberWatch :: Berita Hacking & Kebocoran Data</title>
+<meta name="description" content="SiberWatch — sumber berita hacking, virus, ransomware dan kebocoran data, liputan Malaysia & antarabangsa.">
+<link rel="preload" href="assets/fonts/bebas-neue-400.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="assets/fonts/jetbrains-mono-400.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="scanlines"></div>
+
+<nav>
+  <div class="logo">SIBER<span>WATCH</span>_</div>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="nav-links">
+    <a href="#about">pasal</a>
+    <a href="#crew">kru</a>
+    <a href="berita.html">berita</a>
+    <a href="#terminal">terminal</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-tag">SIARAN BAWAH TANAH GAYA DEFCON</div>
+  <h1>SELAMAT DATANG KE <span class="glitch">SIBERWATCH</span></h1>
+  <p class="sub">Berita hacking, virus, ransomware dan kebocoran data — liputan Malaysia & antarabangsa. Gila babi punya content, tapi info real. Stay paranoid, stay informed.</p>
+  <div id="typed-line">&gt;</div>
+  <div class="hero-ctas">
+    <button class="btn" onclick="location.href='berita.html'">BACA BERITA</button>
+    <button class="btn alt" onclick="document.getElementById('terminal').scrollIntoView({behavior:'smooth'})">TERMINAL LANGSUNG</button>
+  </div>
+</section>
+
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span>⚠ AMARAN ZERO-DAY</span>
+    <span>⚠ GENG RANSOMWARE SERANG LAGI</span>
+    <span>⚠ PATCH SISTEM KAU SEKARANG</span>
+    <span>⚠ MALWARE BUATAN AI SEMAKIN BERLELUASA</span>
+    <span>⚠ KEBOCORAN DATA: 40 JUTA REKOD TERDEDAH</span>
+    <span>⚠ AMARAN ZERO-DAY</span>
+    <span>⚠ GENG RANSOMWARE SERANG LAGI</span>
+    <span>⚠ PATCH SISTEM KAU SEKARANG</span>
+    <span>⚠ MALWARE BUATAN AI SEMAKIN BERLELUASA</span>
+    <span>⚠ KEBOCORAN DATA: 40 JUTA REKOD TERDEDAH</span>
+  </div>
+</div>
+
+<section id="crew">
+  <h2 class="section-title">KENALI <span class="accent">KRU</span></h2>
+  <p class="section-sub">Mascot rasmi SiberWatch. Setiap satu mewakili satu vibe dalam dunia keselamatan siber.</p>
+
+  <div class="mascot-grid">
+
+    <div class="mascot-card">
+      <svg viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="95" fill="#0e0d0d" stroke="#cc0000" stroke-width="3"/>
+        <path d="M55 150 Q100 90 145 150 Z" fill="#151010" stroke="#cc0000" stroke-width="2"/>
+        <ellipse cx="100" cy="105" rx="38" ry="40" fill="#231a1a" stroke="#cc0000" stroke-width="2"/>
+        <path d="M62 90 Q100 50 138 90 Q138 70 100 60 Q62 70 62 90 Z" fill="#0a0a0a" stroke="#cc0000" stroke-width="2"/>
+        <rect x="78" y="100" width="44" height="14" rx="3" fill="#000"/>
+        <rect x="80" y="103" width="18" height="8" fill="#ff1414"/>
+        <rect x="102" y="103" width="18" height="8" fill="#ff1414"/>
+        <line x1="98" y1="107" x2="102" y2="107" stroke="#ff1414" stroke-width="2"/>
+      </svg>
+      <h3>HOODIE_HACK3R</h3>
+      <p>Duduk dalam bilik gelap, 3 monitor, kopi sejuk. Simbol stereotaip hacker klasik.</p>
+    </div>
+
+    <div class="mascot-card">
+      <svg viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="55" fill="#2a0a0a" stroke="#ff1414" stroke-width="3"/>
+        <g stroke="#ff1414" stroke-width="4">
+          <line x1="100" y1="30" x2="100" y2="10"/>
+          <line x1="100" y1="170" x2="100" y2="190"/>
+          <line x1="30" y1="100" x2="10" y2="100"/>
+          <line x1="170" y1="100" x2="190" y2="100"/>
+          <line x1="52" y1="52" x2="38" y2="38"/>
+          <line x1="148" y1="148" x2="162" y2="162"/>
+          <line x1="52" y1="148" x2="38" y2="162"/>
+          <line x1="148" y1="52" x2="162" y2="38"/>
+        </g>
+        <circle cx="100" cy="100" r="8" fill="#ff1414"/>
+        <circle cx="38" cy="38" r="6" fill="#ff1414"/>
+        <circle cx="162" cy="162" r="6" fill="#ff1414"/>
+        <circle cx="162" cy="38" r="6" fill="#ff1414"/>
+        <circle cx="38" cy="162" r="6" fill="#ff1414"/>
+        <path d="M82 90 Q100 80 118 90" stroke="#fff" stroke-width="3" fill="none"/>
+        <circle cx="85" cy="95" r="4" fill="#fff"/>
+        <circle cx="115" cy="95" r="4" fill="#fff"/>
+        <path d="M85 115 Q100 122 115 115" stroke="#fff" stroke-width="3" fill="none"/>
+      </svg>
+      <h3>VIRUS.EXE</h3>
+      <p>Comel tapi bahaya. Sebar dalam network secepat gossip pejabat.</p>
+    </div>
+
+    <div class="mascot-card">
+      <svg viewBox="0 0 200 200">
+        <rect x="35" y="50" width="130" height="90" rx="6" fill="#000" stroke="#ff1414" stroke-width="3"/>
+        <rect x="45" y="60" width="110" height="60" fill="#1a0a0a"/>
+        <text x="55" y="80" fill="#ff1414" font-family="monospace" font-size="11">root@skull:~#</text>
+        <text x="55" y="95" fill="#f2f0ea" font-family="monospace" font-size="11">akses diberi_</text>
+        <rect x="60" y="148" width="80" height="8" fill="#ff1414"/>
+        <rect x="35" y="145" width="10" height="20" fill="#ff1414"/>
+        <rect x="155" y="145" width="10" height="20" fill="#ff1414"/>
+      </svg>
+      <h3>TERMINAL_SKULL</h3>
+      <p>Akses root diberi. Kalau nampak ni dalam log korang, dah terlambat.</p>
+    </div>
+
+    <div class="mascot-card">
+      <svg viewBox="0 0 200 200">
+        <ellipse cx="100" cy="115" rx="55" ry="45" fill="#1a0a0a" stroke="#cc0000" stroke-width="3"/>
+        <circle cx="80" cy="105" r="10" fill="#ff1414"/>
+        <circle cx="120" cy="105" r="10" fill="#ff1414"/>
+        <circle cx="80" cy="105" r="4" fill="#fff"/>
+        <circle cx="120" cy="105" r="4" fill="#fff"/>
+        <path d="M75 135 Q100 150 125 135" stroke="#ff1414" stroke-width="3" fill="none"/>
+        <line x1="60" y1="70" x2="50" y2="40" stroke="#cc0000" stroke-width="3"/>
+        <line x1="140" y1="70" x2="150" y2="40" stroke="#cc0000" stroke-width="3"/>
+        <circle cx="50" cy="35" r="6" fill="#cc0000"/>
+        <circle cx="150" cy="35" r="6" fill="#cc0000"/>
+        <path d="M50 150 Q40 165 50 175" stroke="#cc0000" stroke-width="6" fill="none"/>
+        <path d="M150 150 Q160 165 150 175" stroke="#cc0000" stroke-width="6" fill="none"/>
+        <path d="M100 155 Q100 170 100 178" stroke="#cc0000" stroke-width="6" fill="none"/>
+      </svg>
+      <h3>BUG_BOT</h3>
+      <p>Bot kecil yang lahir dari kod rosak. Suka merayau dalam server production.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="terminal">
+  <h2 class="section-title">TERMINAL <span class="accent">LANGSUNG</span></h2>
+  <p class="section-sub">Simulasi log boot. Bukan hack sebenar, sekadar untuk vibe.</p>
+  <div class="terminal">
+    <div class="terminal-bar">
+      <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+    </div>
+    <div class="terminal-body" id="boot-log"></div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">PASAL <span class="accent">SIBERWATCH</span></h2>
+  <p class="section-sub" style="max-width:760px">
+    SiberWatch adalah platform tidak rasmi untuk korang yang minat dunia keselamatan siber, budaya hacking, analisis malware, dan perkembangan IT semasa — liputan Malaysia dan antarabangsa.
+    Gaya website ni terinspirasi dari DEFCON — gelap, raw, terus terang. Tapi content tetap educational: pasal ancaman terkini, kebocoran data besar, dan tips keselamatan digital.
+    <br><br>
+    <strong style="color:var(--red-bright)">Penafian:</strong> semua content untuk tujuan edukasi & kesedaran. Tak menggalakkan sebarang aktiviti haram.
+  </p>
+</section>
+
+<footer>
+  <div class="warn">⚠ KEKAL DIPATCH. KEKAL PARANOID. ⚠</div>
+  <p>SiberWatch © 2026 — dibina dalam bawah tanah, untuk yang ingin tahu.</p>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
